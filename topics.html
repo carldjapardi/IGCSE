@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="master.css">
+    <link rel="icon" href="/Users/carl/Desktop/School/Web Dev/images/fish.ico">
+    <meta name="viewport" content="width=device-width, initial-scale 1">
+    <title>Guide To IGCSE</title>
+    <style>
+      table {
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        height: auto;
+        border-spacing: 0px 50px;
+        color: black;
+      }
+      table td {
+        border: 1px solid black;
+      }
+      table tr td:nth-child(odd) {
+        width: 25.4%;
+      }
+      table tr td:nth-child(even) {
+        text-align: center;
+        width: 74.6%;
+        border-left: white;
+      }
+      table img {
+        display: block;
+        max-width:254px;
+        width: 100%;
+        height:auto;
+      }
+
+      table tr td:nth-child(even){
+        color: black;
+        background: linear-gradient(white, white 50%, #edf0f1, 50%, #edf0f1);
+        background-size: 100% 202%;
+        transition: all 0.2s ease;
+      }
+      table tr td:nth-child(even):hover {
+        cursor: pointer;
+        color: dodgerblue;
+        background-position: 100% 100%;
+        text-decoration: underline;
+        animation: up-bump 0.3s infinite;
+      }
+      @keyframes up-bump {
+        0% { padding-bottom: 1.0em; }
+        50% { padding-bottom: 1.5em; }
+        100% { padding-bottom: 1.0em; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="/Users/carl/Desktop/School/Web Dev/images/glasses.svg" alt="Logo">
+      <nav>
+        <ul class="nav_links">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="topics.html">Topics</a></li>
+          <li><a href="tips.html">Tips</a></li>
+        </ul>
+      </nav>
+      <a class="about" href="about.html">About Us</a>
+    </header>
+
+    <main>
+      <p style="padding:20px">Currectly, only Biology & Computer Science have concrete material</p>
+      <div class="language">
+        <table>
+          <tr onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/topics_/1fle_course/fle_course.html';">
+            <td> <img class="fle_img" src="/Users/carl/Desktop/School/Web Dev/images/fle.jpeg" alt="fail fle"></td>
+            <td> First Langauge English </td>
+          </tr>
+          <tr onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/topics_/2lit_course/lit_course.html';">
+            <td> <img class="msl_img" src="/Users/carl/Desktop/School/Web Dev/images/lit.png" alt="fail lit"></td>
+            <td> Literature </td>
+          </tr>
+          <tr onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/topics_/3msl_course/msl_course.html';">
+            <td> <img class="msl_img" src="/Users/carl/Desktop/School/Web Dev/images/msl.png" alt="fail msl"></td>
+            <td> Mandarin Second Language </td>
+          </tr>
+          <tr onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/topics_/4mfl_course/mfl_course.html';">
+            <td> <img class="mfl_img" src="/Users/carl/Desktop/School/Web Dev/images/mfl.png" alt="fail mfl"></td>
+            <td> Mandarin Foreign Language </td>
+          </tr>
+          <tr onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/topics_/5bhs_course/bhs_course.html';">
+            <td> <img class="bhs_img" src="/Users/carl/Desktop/School/Web Dev/images/bhs.png" alt="fail bhs"></td>
+            <td> Bahasa Indonesia Language </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="STEM">
+        <table>
+          <tr onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/topics_/6amaths_course/amaths_course.html';">
+            <td> <img class="amaths_img" src="/Users/carl/Desktop/School/Web Dev/images/amaths.jpeg" alt="fail amaths"></td>
+            <td> Additional Maths </td>
+          </tr>
+          <tr onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/topics_/7emaths_course/emaths_course.html';">
+            <td> <img class="emaths_img" src="/Users/carl/Desktop/School/Web Dev/images/emaths.jpeg" alt="fail emaths"></td>
+            <td> Extended Maths </td>
+          </tr>
+          <tr onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/topics_/8physics_course/physics_course.html';">
+            <td> <img class="physics_img" src="/Users/carl/Desktop/School/Web Dev/images/physics.jpeg" alt="fail fle"></td>
+            <td> Physics </td>
+          </tr>
+          <tr onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/topics_/9bio_course/bio_course.html';">
+            <td> <img class="bio_img" src="/Users/carl/Desktop/School/Web Dev/images/biology.png" alt="fail fle"></td>
+            <td> Biology </td>
+          </tr>
+          <tr onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/topics_/10chem_course/chem_course.html';">
+            <td> <img class="chem_img" src="/Users/carl/Desktop/School/Web Dev/images/chemistry.png" alt="fail fle"></td>
+            <td> Chemistry </td>
+          </tr>
+          <tr onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/topics_/11cs_course/cs_course.html';">
+            <td> <img class="cs_img" src="/Users/carl/Desktop/School/Web Dev/images/cs.jpeg" alt="fail fle"></td>
+            <td> Computer Science </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="humanities">
+        <table>
+          <tr onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/topics_/12econ_course/econ_course.html';">
+            <td> <img class="econ_img" src="/Users/carl/Desktop/School/Web Dev/images/econ.jpeg" alt="fail econ"></td>
+            <td> Economics </td>
+          </tr>
+          <tr onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/topics_/13gp_course/gp_course.html';">
+            <td> <img class="gp_img" src="/Users/carl/Desktop/School/Web Dev/images/gp.png" alt="fail gp"></td>
+            <td> Global Perspective </td>
+          </tr>
+        </table>
+      </div>
+
+    </main>
+    <hr>
+    <footer>Copyright SIGOTHER @2021</footer>
+  </body>
+</html>

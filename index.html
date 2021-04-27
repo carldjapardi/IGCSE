@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="master.css">
+    <link rel="icon" href="/Users/carl/Desktop/School/Web Dev/images/fish.ico">
+    <meta name="viewport" content="width=device-width, initial-scale 1">
+    <title>Icognito IGCSE</title>
+    <style>
+      .main_img {
+        width:100%;
+        height:100%;
+        object-fit:contain;
+        padding: 15px 150px;
+      }
+      .intro {
+        padding: 20px 200px;
+      }
+      .intro h1 {
+        text-align: center;
+        padding: 0px 10px;
+      }
+      .intro p {
+        text-align: center;
+        padding: 0px 10px;
+      }
+      .table_nav {
+        border: hidden;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        border-spacing: 0px 50px;
+        color: white;
+      }
+      .table_nav td {
+        padding: 50px;
+      }
+      .table_nav tr td:nth-child(odd) {
+        text-align: center;
+        width:25%;
+        height:200px;
+      }
+      .table_nav tr td:nth-child(even) {
+        text-align: justify;
+        width:75%;
+        border-left: white;
+      }
+      .objective td:first-child {
+        background-color: #fd696b;
+      }
+      .objective td:last-child {
+        background-color: #fd9699;
+      }
+      .topics td:first-child {
+        background-color: #6155a6;
+      }
+      .topics td:last-child {
+        background-color: #a685e2;
+      }
+      .list_subj {
+        padding: 5px 0px 0px 40px;
+      }
+      .list_subj li {
+        padding: 5px 0px;
+      }
+      .how td:first-child {
+        background-color: #0061a8;
+      }
+      .how td:last-child {
+        background-color: #2978b5;
+      }
+      .trust td:first-child {
+        background-color: #126e82;
+      }
+      .trust td:last-child {
+        background-color: #3e9bbc;
+      }
+      .reference td:first-child {
+        background-color: #007965;
+      }
+      .reference td:last-child {
+        background-color: #009688;
+      }
+      .model td:first-child {
+        background-color: #b68973;
+      }
+      .model td:last-child {
+        background-color: #cbb294;
+      }
+      .table_nav tr:hover {
+        cursor: pointer;
+        box-shadow: 8px 10px 15px rgb(195,195,195);
+      }
+      .objective:hover td:first-child, .topics:hover td:first-child, .model:hover td:first-child, .how:hover td:first-child, .trust:hover td:first-child, .reference:hover td:first-child {
+        text-decoration: underline;
+        filter: brightness(115%);
+        transition: all 0.3s ease;
+        animation: up-bump 0.3s infinite;
+      }
+      /*.objective:hover, .topics:hover, .model:hover, .how:hover, .trust:hover, .reference:hover {
+        cursor: pointer;
+        box-shadow: 8px 10px 15px rgb(155,155,155);
+      }*/
+      @keyframes up-bump {
+        0% { padding-top: 1.0em; }
+        50% { padding-top: 1.5em; }
+        100% { padding-top: 1.0em; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="/Users/carl/Desktop/School/Web Dev/images/glasses.svg" alt="Logo">
+      <nav>
+        <ul class="nav_links">
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="topics.html">Topics</a></li>
+          <li><a href="tips.html">Tips</a></li>
+        </ul>
+      </nav>
+      <a class="about" href="about.html">About Us</a>
+    </header>
+
+    <main>
+      <img class="main_img" src="/Users/carl/Desktop/School/Web Dev/images/book.webp" alt="fail">
+
+        <div class="intro">
+  	       <h1> Welcome To Icognito IGCSE </h1>
+  	        <p> <br> Hey there, ICOGNITO IGCSE's is build to help people taking the IGCSE course. It is a simple designed website that aims to help students and teachers alike on core subjects. We include various subject notes, lectures, and even model answers to follow.</p>
+        </div>
+
+      <table class="table_nav">
+        <tr class="objective" title="Read More" onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/about.html';">
+          <td>Objective</td>
+          <td><p>ICOGNITO IGCSE aims to guide you through the bits and pieces of IGCSE. We want to build a like minded communion in which scholars from all over the world are able to sucessfully enjoy a positive mindset through the upbringing of rocketing improvements. <br><br> We expect you to use our material to help understand and comprehend crucial topics in order to build a cohesive understanding.</p></td>
+        </tr>
+        <tr class="topics" title="Full Topics" onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/topics.html'">
+          <td>Topics</td>
+          <td>The subjects we provide materials are:
+              <ul class="list_subj">
+                <li>English First Language</li>
+                <li>Bahasa Indonesia</li>
+                <li>Mandarin Second & Foreign Language</li>
+                <li>Additional Maths</lix>
+                <li> Extended Maths</li>
+                <li>Physics</li>
+                <li>Chemistry</li>
+                <li>Biology</li>
+                <li>Computer Science</li>
+                <li>Economics</li>
+                <li>Global Perspective</li>
+              </ul>
+            </td>
+        </tr>
+        <tr class="model" title="Answers&Works" onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/tips.html#model';">
+          <td>Model Answers</td>
+          <td>Here, we help students and teachers alike to find answers provided by real life students that have scored gracefully in the tasks. We also provide a comprehensive range of activities you are expect to do in the IGCSE course.</td>
+        </tr>
+        <tr class="how" title="Common Inquiries" onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/tips.html#how'">
+          <td>How To</td>
+          <td>This are a couple of miscellaneous questions and answers that we provide a solution/suggestion to</td>
+        </tr>
+        <tr class="trust" title="Our Trust" onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/about.html'">
+          <td>Why Trust Us</td>
+          <td>Because we are ICOGNITOs </td>
+        </tr>
+        <tr class="reference" title="Resources" onclick="window.location='/Users/carl/Desktop/School/Web Dev/IGCSE/tips.html#reference'">
+          <td>References</td>
+          <td>Our huge credits goes to those who have help aired this site and to those who have provided quality content</td>
+        </tr>
+      </table>
+    </main>
+    <hr>
+    <footer>Copyright SIGOTHER @2021</footer>
+  </body>
+</html>
