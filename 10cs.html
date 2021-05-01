@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+<script src="https://kit.fontawesome.com/b7f6e26f3d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="nav_topics_chap.css">
+    <link rel="icon" href="fish.ico">
+    <meta name="viewport" content="width=device-width, initial-scale 1">
+    <title>ICOGNITO IGCSE </title>
+    <style>
+      .active_chap {
+        background-color:#16c79a;
+      }
+      .chapter_nav_links {
+        background-color:#e8efeb;
+      }
+      .chapter_nav_links button:not(.active_chap):hover {
+        overflow: auto;
+        white-space: normal;
+        word-wrap: break-word;
+        background-color: #adeecf;
+      }
+      .topic_nav_links {
+        background-color: #0f1123;
+      }
+      .back_tips {
+        background-color:#16c79a;
+        color: black;
+        border: 2px solid #16c79a;
+      }
+      .active_top {
+        color:#16c79a;
+      }
+      .topic_nav_links li a:not(.back_tips):not(.active_top):hover {
+        color: #16c79a;
+      }
+      .outer h1, h2, h3 {
+        padding: 10px 0px 10px 0px;
+      }
+      .outer {
+        padding: 6px 0px 6px 45px;
+        font-size: 16px;
+      }
+      .outer li {
+        line-height: 1.5em;
+        padding: 6px;
+      }
+      .outer li ul, .outer li ol {
+        padding: 10px 35px;
+        line-height: 1.5em;
+      }
+      .outer li ul li, .outer li ol li {
+        padding: 6px;
+      }
+      .main_content p {
+        padding: 20px 0px 5px 0px;
+      }
+      .outer p {
+        padding-left: 20px;
+      }
+      .top_img {
+        max-width: 40%;
+        height: auto;
+        padding: 10px 45px;
+      }
+      .bottom_img {
+        max-width: 85%;
+        height: auto;
+        padding: 10px 45px;
+      }
+      table th{
+        background-color: #16c79a;
+      }
+      .table_sh {
+        background-color: #adeecf;
+        padding: 15px;
+      }
+      .link_ {
+        color: #16c79a;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="chapter_nav_links">
+          <li class="current_topic">CS Course</li>
+          <li><a href="1cs.html"><button>Binary Systems & Hexdecimal</button></a></li>
+          <li><a href="2cs.html"><button>Communication & Internet Technologies</button></a></li>
+          <li><a href="3cs.html"><button>Logic Gates & Logic Circuits</button></a></li>
+          <li><a href="4cs.html"><button>Operating Systems & Computer Architecture</button></a></li>
+          <li><a href="5cs.html"><button> Input & Output Devices</button></a></li>
+          <li><a href="6cs.html"><button> Memory & Data Storage</button></a></li>
+          <li><a href="7cs.html"><button>High & Low Level Languages</button></a></li>
+          <li><a href="8cs.html"><button>Security & Ethnics</button></a></li>
+          <li><a href="9cs.html"><button>Problem-Solving & Design</button></a></li>
+          <li><a href="10cs.html"><button class="active_chap">Pseudocode & Flowcharts</button></a></li>
+          <li><a href="11cs.html"><button>Programming Concepts</button></a></li>
+          <li><a href="12cs.html"><button>Data Structures</button></a></li>
+          <li><a href="13cs.html"><button>Databases</button></a></li>
+        </ul>
+        <ul class="topic_nav_links">
+          <img class="logo" src="glasses.svg" alt="Logo">
+          <li><a href="fle_course.html">FLE</a></li>
+          <li><a href="lit_course.html">LIT</a></li>
+          <li><a href="msl_course.html">MSL</a></li>
+          <li><a href="mfl_course.html">MFL</a></li>
+          <li><a href="bhs_course.html">BHS</a></li>
+          <li><a href="amaths_course.html">AM</a></li>
+          <li><a href="physics_course.html">PHY</a></li>
+          <li><a href="1classification.html">BIO</a></li>
+          <li><a href="chem_course.html">CHM</a></li>
+          <li><a href="cs_course\.html" class="active_top">CS</a></li>
+          <li><a href="econ_course.html">ECN</a></li>
+          <li><a href="gp_course.html">GP</a></li>
+          <li><a class="back_tips" href="tips.html">Tips</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="main_content">
+      <h1>Pseudocode & Flowcharts</h1>
+      <div class='author'> Authored By: Carl | <a class="link_" href="https://cheatography.com/deleted-131013/cheat-sheets/algorithm-igcse/">Check out this cheatsheet</a> </div>
+      <h2>Operators</h2>
+      <table>
+        <tr>
+          <th colspan="2">Assignment</th>
+          <th colspan="2">Arithmetic</th>
+          <th colspan="2">Logical Boolean</th>
+        </tr>
+        <tr>
+          <td class="table_sh">Operator</td>
+          <td class="table_sh">Description</td>
+          <td class="table_sh">Operator</td>
+          <td class="table_sh">Description</td>
+          <td class="table_sh">Operator</td>
+          <td class="table_sh">Description</td>
+        </tr>
+        <tr>
+          <td>=</td>
+          <td>assigning a variable</td>
+          <td>+<br>-</td>
+          <td>add/subtract values</td>
+          <td>AND</td>
+          <td>Means conjuction</td>
+        </tr>
+        <tr>
+          <td>></td>
+          <td>checking whether a value is greater than another value</td>
+          <td>/<br>*</td>
+          <td>divide/multiply values</td>
+          <td>OR</td>
+          <td>Means disjunction</td>
+        </tr>
+        <tr>
+          <td><</td>
+          <td>checking whether a value is lesser than another value</td>
+          <td>^</td>
+          <td>power - raise an exponent of the value</td>
+          <td>NOT</td>
+          <td>Means negation (opposite)</td>
+        </tr>
+        <tr>
+          <td>&lt;&gt;</td>
+          <td>not equal sign</td>
+          <td>DIV; MOD</td>
+          <td>integer division; modulo operation (remainder after dividing two numbers)</td>
+          <td>IS</td>
+          <td>check whether memory location of two values is the same</td>
+        </tr>
+      </table>
+      <h2>Conditional Statements</h2>
+      <ul class='outer'>
+        <li>IF statement is a two branching statement. Meaning if one condition is not met, then it will perform the other instruction. For example: <br> IF condition <br> <span style="padding-left:20px"> THEN do something <br> </span> <span style='padding-left:20px'> ELSE do something else </span> <br> ENDIF </li>
+        <li>Select Case is a multiway branching statement. For example: <br> CASE Grade OF <br> <span style="padding-left:20px">'A' : PRINT 'Excellent'</span> <br> <span  style="padding-left:20px">'B' : PRINT 'Good'</span> <br> <span  style="padding-left:20px">'C' : PRINT 'Not bad'</span> <br> <span style="padding-left:20px">OTHERWISE PRINT 'Try again'</span> <br> ENDCASE </li>
+      </ul>
+      <h2>Loops</h2>
+      <ul class='outer'>
+        <li>FOR loop
+          <ul>
+            <li>A FOR loop is an entry controlled loop that checks whether the condition is true before executing the loop</li>
+            <li>For example: <br> FOR i = 1 TO 10 <br> <span class='code'>PRINT i</span> <br> NEXT </li>
+            <li>The output: 1,2,3,4,5,6,7,8,9,10</li>
+          </ul>
+        </li>
+        <li>WHILE loop
+          <ul>
+            <li>A WHILE loop is an entry controlled loop that checks whether the condition is true before executing the loop</li>
+            <li>For example: <br> Count = 1 <br> WHILE Count > 10 DO <br> <span class="code">PRINT Count</span><br><span class="code">Count = Count + 1</span> <br>ENDWHILE </li>
+            <li>The output: 1,2,3,4,5,6,7,8,9,10 </li>
+          </ul>
+        </li>
+        <li>REPEAT loop
+          <ul>
+            <li>A REPEAT loop is an exit controlled loop that checks whether the condition is true after executing the loop</li>
+            <li>For example: <br> Count = 1 <br>REPEAT <br> <span class='code'>PRINT 'hello'</span> <br> <span class='code'>Count = Count + 1</span> <br> <span class='code'> UNTIL Count > 10</span> </li>
+            <li>The output: 1,2,3,4,5,6,7,8,9,10</li>
+          </ul>
+        </li>
+      </ul>
+      <h2>Flowcharts</h2>
+      <p>Flowchars is the best way to express how a set of instructions will flow. It makes debugging/building the outline of the code simple and coherent</p>
+      <img src="10cs1.png" alt="flowchart_diagram">
+      <table>
+        <tr>
+          <th>Look</th>
+          <th>Name</th>
+          <th>Function</th>
+        </tr>
+        <tr>
+          <td>Oval shape</td>
+          <td>START/END</td>
+          <td>To initiate/stop the program</td>
+        </tr>
+        <tr>
+          <td> Arrow</td>
+          <td>Arrows</td>
+          <td>Flow of the program</td>
+        </tr>
+        <tr>
+          <td> Parallelogram</td>
+          <td>Input/Output</td>
+          <td>Represents an input our output</td>
+        </tr>
+        <tr>
+          <td>Diamond</td>
+          <td>Decision</td>
+          <td>Indicates a decision (i.e IF a > 5)</td>
+        </tr>
+        <tr>
+          <td>Rectangle</td>
+          <td>Process</td>
+          <td>Indicates a process</td>
+        </tr>
+      </table>
+    </div>
+    <footer>
+      <div class="social_icons_footer">
+        <span class="contact_icon">
+          <i class="fas fa-envelope border_i" onclick="window.open('mailto:itsfragilis@gmail.com')"></i>
+          <i class="fab fa-whatsapp border_i" onclick="window.open('https://wa.me/6285358516161')"></i>
+          <i class="fab fa-instagram border_i" onclick="window.open('http://www.instagram.com/djapardicarl')"></i>
+          <!-- <i class="fas fa-comments"></i> -->
+        </span>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li> <a href="topics.html">Topics</a> </li>
+        <li> <a href="tips.html">Tips</a> </li>
+        <li> <a href="about.html">About</a> </li>
+      </ul>
+      <p class="license">Copyright SIGOTHER © 2021 Under MIT License</p>
+    </footer>
+  <script>let button = document.querySelector('.logo')
+button.addEventListener('click', ()=>{
+  document.documentElement.classList.toggle('dark_mode')
+})</script></body>
+</html>

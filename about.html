@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<script src="https://kit.fontawesome.com/b7f6e26f3d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="master.css">
+    <meta name="viewport" content="width=device-width, initial-scale 1">
+    <link rel="icon" href="fish.ico">
+    <script src="https://kit.fontawesome.com/b7f6e26f3d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Guide To IGCSE</title>
+    <style>
+      .goals {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to right, rgba(253, 202, 64, 0.8), rgba(235, 89, 110, 0.6),rgba(245, 134, 52, 0.6));
+        height: 46vw;
+      }
+      .vision, .mission, .values {
+        padding: 1.75em 3.125em 3.125em 2.25em;
+        margin: 1.25em;
+        width: 30%;
+        height: 60%;
+        font-size: 26px;
+      }
+      .vision {
+        background-color: #fdca40;
+      }
+      .mission{
+        background-color: #eb596e;
+      }
+      .values {
+        background-color: #f58634;
+      }
+      .author a {
+        color: #04009a;
+      }
+      .left-block, .right-block {
+        padding: 20px;
+        width: 100%;
+        height: inherit;
+        transition: 0.3s ease;
+      }
+      .left-block {
+        font-size: 26px;
+        text-align: center;
+        background-color: #3edbf0;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .author:hover {
+        cursor: pointer;
+      }
+      .author:hover .left-block {
+        filter: brightness(115%);
+        text-decoration: underline 1px dashed;
+        animation: up-bump 0.3s infinite;
+      }
+      .right-block {
+        font-size: 20px;
+        background-color: #c0fefc;
+        width: 70%;
+        padding: 50px 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .contribution {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 38vw;
+        width: 100%;
+        background-image: linear-gradient(to right, rgba(99,214,235, 0.8), rgba(215,215,235, 0.8));
+      }
+      .contributors {
+        height: 10em;
+        width: 100%;
+        position: relative;
+      }
+      .contributors a {
+        text-decoration: none;
+        color: black;
+      }
+      .contributors a h2 {
+        font-size: 26px;
+      }
+      .contributors .author {
+        display: flex;
+        height: inherit;
+        width: 100%;
+        align-items: center;
+        border: 1px solid blue;
+        visibility: hidden;
+        position: absolute;
+        animation: 32s slides infinite;
+        transition: 0.3s ease;
+      }
+      .contributors #author1 {
+        animation-delay: 0s
+      }
+      .contributors #author2 {
+        animation-delay: 8s
+      }
+      .contributors #author3 {
+        animation-delay: 16s
+      }
+      .contributors #author4 {
+        animation-delay: 24s
+      }
+      .contact {
+        height: 10em;
+        width: 100%;
+      }
+      .founder {
+        display: flex;
+        height: inherit;
+        width: inherit;
+        align-items: center;
+        justify-content: center;
+      }
+      .left_block_f {
+        font-size: 26px;
+        background-color: #08d9d6;
+        width: 30%;
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .right_block_f {
+        font-size: 20px;
+        height: inherit;
+        padding: 50px 70px;
+        background-color: #eaeaea;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      @keyframes slides {
+        0% {visibility: visible}
+        33.33% {visibility: hidden}
+      }
+      @keyframes up-bump {
+        0% { padding-bottom: 1.0em; }
+        50% { padding-bottom: 1.6em; }
+        100% { padding-bottom: 1.0em; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="glasses.svg" alt="Logo">
+      <nav>
+        <ul class="nav_links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="topics.html">Topics</a></li>
+          <li><a href="tips.html">Tips</a></li>
+        </ul>
+      </nav>
+      <a style="background-color:#edf0f1;" class="about" href="about.html">About Us</a>
+    </header>
+
+    <main>
+      <div class="goals">
+        <div class="vision">
+          <h2 style="font-size:3vw;">Vision</h2>
+          <p style="font-size:1.5vw;">Our vision is to become a trusted website handbook for IGCSE students. </p>
+        </div>
+        <div class="mission">
+          <h2 style="font-size:3vw;">Mission</h2>
+          <p style="font-size:1.5vw;">Our mission is to provide students taking the IGCSE curiculum reliable, detailed, and informative materials</p>
+        </div>
+        <div class="values">
+          <h2 style="font-size:3vw;">Values</h2>
+          <p style="font-size:1.5vw;">Our values are being reliable and consistent.  <br> <br>We strive for credibility in the materials that we have provided </p>
+        </div>
+      </div>
+      <div class="contribution" id="contribution">
+        <div class="contributors">
+          <!-- <p style="text-align: center; padding: 30px 0px">Our Contributors & Authors</p> -->
+          <div class='author' id="author1">
+            <div class="left-block">
+              <a href="https://www.linkedin.com/in/andrewspagnardi/?originalSubdomain=id"><h2>Andrew Spagnardi</h2></a>
+            </div>
+            <div class="right-block">
+              <p>Mr Andrew is the author of our Economics section. He is an economics teacher in SIS Medan. He has over 8 years of teaching experience, and is also a financial accountant. His vast field of expertise will assure you that his notes is credible and reliable</p>
+            </div>
+          </div>
+          <div class='author' id="author2">
+            <div class="left-block">
+              <a href="https://www.linkedin.com/in/joeylie92/"><h2>Joey Lie</h2></a>
+            </div>
+            <div class="right-block">
+              <p>Ms Joey the author of the biology section is a teacher in Evergreen Institute and teaches IGCSE & A level Biology. The notes she has provided in the Biology section is detailed, informative, and credible</p>
+            </div>
+          </div>
+          <div class='author' id="author3">
+            <div class="left-block">
+              <h2>Girvin</h2>
+            </div>
+            <div class="right-block">
+              <p>Girvin, the co-author of our Physics & Economics section, is a student studying in the IB diploma, who has scored seven A* in the subject he took for IGCSEs, including Physics & Economics. He has provided key notes that are consistent and important.</p>
+            </div>
+          </div>
+          <div class='author' id="author4">
+            <div class="left-block">
+              <h2>Felicia Qiu</h2>
+            </div>
+            <div class="right-block">
+              <p>Felicia, currently at the final year of her IGCSE course has authored our Bahasa section. She has consistently scored well and has thus provided excellent material to those who are struggling in Bahasa Indonesia.</p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="contact">
+          <div class='founder'>
+            <div class="left_block_f">
+              <h2>Carl Djapardi</h2>
+            </div>
+            <div class="right_block_f">
+              <p>Hey there, I am Carl taking the IGCSE course, and I am currently in Secondary 3. I have allocated many joint effort from my peers, teachers, and mentors to develop a website to help guide students through this curiculum. The site is long from finished, but I will constantly update it and provide tips and maybe even some blog post in the future.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <a href="mailto:itsfragilistic@gmail.com"><button class="about" style="width:10em;">Contact Us</button></a> -->
+    </main>
+    <hr style="padding:4px">
+    <footer>
+      <div class="social_icons_footer">
+        <span class="contact_icon">
+          <i class="fas fa-envelope border_i" onclick="window.open('mailto:itsfragilis@gmail.com')"></i>
+          <i class="fab fa-whatsapp border_i" onclick="window.open('https://wa.me/6285358516161')"></i>
+          <i class="fab fa-instagram border_i" onclick="window.open('http://www.instagram.com/djapardicarl')"></i>
+          <!-- <i class="fas fa-comments"></i> -->
+        </span>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li> <a href="topics.html">Topics</a> </li>
+        <li> <a href="tips.html">Tips</a> </li>
+        <li> <a href="about.html">About</a> </li>
+      </ul>
+      <p class="license">Copyright SIGOTHER © 2021 Under MIT License</p>
+    </footer>
+
+    <script>
+      let button = document.querySelector('.logo')
+      button.addEventListener('click', ()=>{
+        document.documentElement.classList.toggle('dark_mode')
+      })
+    </script>
+  </body>
+</html>

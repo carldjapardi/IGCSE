@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<script src="https://kit.fontawesome.com/b7f6e26f3d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="master.css">
+    <link rel="icon" href="fish.ico">
+    <meta name="viewport" content="width=device-width, initial-scale 1">
+    <script src="https://kit.fontawesome.com/b7f6e26f3d.js" crossorigin="anonymous"></script>
+    <title>Guide To IGCSE</title>
+    <style>
+      .dark_mode { filter: invert(100%) }
+
+      .books {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .section {
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: center;
+        width: 100%;
+        padding: 30px;
+      }
+      .image_b {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+        height: 254px;
+        overflow: hidden;
+        border-radius: 0.5em;
+        border: 1px solid black;
+        border-right: none;
+        background-color:  #edf0f1;
+      }
+      .image_b img {
+        width: auto;
+        height: 100%;
+        display:block;
+        filter: blur(1px);
+        transform: scale(1.3);
+        transition: 0.7s all ease;
+      }
+      /* .desc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 254px;
+        color: black;
+        border-radius: 0.5em;
+        border: 1px solid rgb(0,0,0);
+        transition: all 0.2s ease;
+      } */
+      .desc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 254px;
+        color: black;
+        background: linear-gradient(white, white 50%, #edf0f1, 50%, #edf0f1);
+        background-size: 100% 202%;
+        /* border: 1px solid black; */
+        border-radius: 0.5em;
+        border: 1px solid rgb(0,0,0);
+        transition: all 0.2s ease;
+      }
+      .section:hover {
+        cursor: pointer;
+      }
+      .section:hover img {
+        transform: scale(1);
+        filter: blur(0px);
+      }
+      .section:hover .desc {
+        color: rgb(211,136,9);
+        /* color: #0080ff; */
+        background-position: 100% 100%;
+        text-decoration: underline;
+        animation: up-bump 0.3s infinite;
+      }
+      @keyframes up-bump {
+        0% { padding-bottom: 1.0em; }
+        50% { padding-bottom: 1.5em; }
+        100% { padding-bottom: 1.0em; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="glasses.svg" alt="Logo">
+      <nav>
+        <ul class="nav_links">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="topics.html">Topics</a></li>
+          <li><a href="tips.html">Tips</a></li>
+        </ul>
+      </nav>
+      <a class="about" href="about.html">About Us</a>
+    </header>
+
+    <main>
+      <!-- <div class='wrapper'>
+        <div class="circle outer">
+          <div class="circle inner">
+            <button class='btn'>Toggle mode</button></div>
+        </div>
+
+      </div> -->
+      <p style="padding:20px">Currectly, only Biology, Computer Science, Economics, Physics have concrete material. Bahasa Indonesia have partial material</p>
+      <div class="section" onclick="LinkCs()">
+        <div class="image_b">
+          <img src="cs.jpeg" alt="fail cs">
+        </div>
+        <div class="desc">
+          <p>Computer Science</p>
+        </div>
+      </div>
+
+      <div class="section" onclick="LinkBio()">
+        <div class="image_b">
+          <img src="biology.png" alt="fail bio">
+        </div>
+        <div class="desc">
+          <p>Biology</p>
+        </div>
+      </div>
+
+      <div class="section" onclick="LinkPhy()">
+        <div class="image_b">
+          <img src="physics.jpeg" alt="fail physics">
+        </div>
+        <div class="desc">
+          <p>Physics</p>
+        </div>
+      </div>
+
+      <div class="section" onclick="LinkEcon()">
+        <div class="image_b">
+          <img src="econ.jpeg" alt="fail econ">
+        </div>
+        <div class="desc">
+          <p>Economics</p>
+        </div>
+      </div>
+
+      <div class="section" onclick="LinkBhs()">
+        <div class="image_b">
+          <img src="bhs.png" alt="fail bhs">
+        </div>
+        <div class="desc">
+          <p>Bahasa Language</p>
+        </div>
+      </div>
+
+      <div class="books">
+        <div class="section" onclick="LinkFle()">
+          <div class="image_b">
+            <img src="fle.jpeg" alt="fail fle">
+          </div>
+          <div class="desc">
+            <p>First Language English</p>
+          </div>
+        </div>
+
+        <div class="section" onclick="LinkLit()">
+          <div class="image_b">
+            <img src="lit.png" alt="fail lit">
+          </div>
+          <div class="desc">
+            <p>Literature</p>
+          </div>
+        </div>
+
+        <div class="section" onclick="LinkMsl()">
+          <div class="image_b">
+            <img src="msl.png" alt="fail msl">
+          </div>
+          <div class="desc">
+            <p>Mandarin Second Language</p>
+          </div>
+        </div>
+
+        <div class="section" onclick="LinkMfl()">
+          <div class="image_b">
+            <img src="mfl.png" alt="fail msl"></td>
+          </div>
+          <div class="desc">
+            <p>Mandarin Foreign Language</p>
+          </div>
+        </div>
+
+        <div class="section" onclick="LinkAm()">
+          <div class="image_b">
+            <img src="amaths.jpeg" alt="fail amaths">
+          </div>
+          <div class="desc">
+            <p>Additional Maths</p>
+          </div>
+        </div>
+
+        <div class="section" onclick="LinkEm()">
+          <div class="image_b">
+            <img src="emaths.jpeg" alt="fail emaths">
+          </div>
+          <div class="desc">
+            <p>Extended Maths</p>
+          </div>
+        </div>
+
+        <div class="section" onclick="LinkChem()">
+          <div class="image_b">
+            <img src="chemistry.png" alt="fail chem">
+          </div>
+          <div class="desc">
+            <p>Chemistry</p>
+          </div>
+        </div>
+
+        <div class="section" onclick="LinkGp()">
+          <div class="image_b">
+            <img src="gp.png" alt="fail gp">
+          </div>
+          <div class="desc">
+            <p>Global Perspective</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <hr>
+    <footer>
+      <div class="social_icons_footer">
+        <span class="contact_icon">
+          <i class="fas fa-envelope border_i" onclick="window.open('mailto:itsfragilis@gmail.com')"></i>
+          <i class="fab fa-whatsapp border_i" onclick="window.open('https://wa.me/6285358516161')"></i>
+          <i class="fab fa-instagram border_i" onclick="window.open('http://www.instagram.com/djapardicarl')"></i>
+          <!-- <i class="fas fa-comments"></i> -->
+        </span>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li> <a href="topics.html">Topics</a> </li>
+        <li> <a href="tips.html">Tips</a> </li>
+        <li> <a href="about.html">About</a> </li>
+      </ul>
+      <p class="license">Copyright SIGOTHER © 2021 Under MIT License</p>
+    </footer>
+    <script>
+      function LinkFle() {
+        window.location.href = 'topics_/fle_course.html'
+      }
+      function LinkLit() {
+        window.location.href = 'topics_/lit_course.html'
+      }
+      function LinkMsl() {
+        window.location.href = 'topics_/msl_course.html'
+      }
+      function LinkMfl() {
+        window.location.href = 'topics_/mfl_course.html'
+      }
+      function LinkBhs() {
+        window.location.href = 'topics_/bhs_course.html'
+      }
+      function LinkAm() {
+        window.location.href = 'topics_/amaths_course.html'
+      }
+      function LinkEm() {
+        window.location.href = 'topics_/emaths_course.html'
+      }
+      function LinkPhy() {
+        window.location.href = 'topics_/physics_course.html'
+      }
+      function LinkBio() {
+        window.location.href = 'topics_/1classification.html'
+      }
+      function LinkChem() {
+        window.location.href = 'topics_/chem_course.html'
+      }
+      function LinkCs() {
+        window.location.href = 'topics_/1cs.html'
+      }
+      function LinkEcon() {
+        window.location.href = 'topics_/econ_course.html'
+      }
+      function LinkGp() {
+        window.location.href = 'topics_/gp_course.html'
+      }
+      let button = document.querySelector('.logo')
+      button.addEventListener('click', ()=>{
+        document.documentElement.classList.toggle('dark_mode')
+      })
+    </script>
+</body>
+</html>
