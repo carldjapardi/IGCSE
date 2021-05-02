@@ -39,38 +39,6 @@
       .author a {
         color: #04009a;
       }
-      .left-block, .right-block {
-        padding: 20px;
-        width: 100%;
-        height: inherit;
-        transition: 0.3s ease;
-      }
-      .left-block {
-        font-size: 26px;
-        text-align: center;
-        background-color: #3edbf0;
-        width: 30%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .author:hover {
-        cursor: pointer;
-      }
-      .author:hover .left-block {
-        filter: brightness(115%);
-        text-decoration: underline 1px dashed;
-        animation: up-bump 0.3s infinite;
-      }
-      .right-block {
-        font-size: 20px;
-        background-color: #c0fefc;
-        width: 70%;
-        padding: 50px 70px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
       .contribution {
         display: flex;
         align-items: center;
@@ -114,6 +82,38 @@
       }
       .contributors #author4 {
         animation-delay: 24s
+      }
+      .left-block, .right-block {
+        padding: 20px;
+        width: 100%;
+        height: inherit;
+        transition: 0.3s ease;
+      }
+      .left-block {
+        font-size: 26px;
+        text-align: center;
+        background-color: #3edbf0;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .author:hover {
+        cursor: pointer;
+      }
+      .author:hover .left-block {
+        filter: brightness(115%);
+        text-decoration: underline 1px dashed;
+        animation: up-bump 0.3s infinite;
+      }
+      .right-block {
+        font-size: 20px;
+        background-color: #c0fefc;
+        width: 70%;
+        padding: 50px 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .contact {
         height: 10em;
@@ -190,8 +190,7 @@
         </div>
       </div>
       <div class="contribution" id="contribution">
-        <div class="contributors">
-          <!-- <p style="text-align: center; padding: 30px 0px">Our Contributors & Authors</p> -->
+        <!-- <div class="contributors">
           <div class='author' id="author1">
             <div class="left-block">
               <a href="https://www.linkedin.com/in/andrewspagnardi/?originalSubdomain=id"><h2>Andrew Spagnardi</h2></a>
@@ -224,8 +223,75 @@
               <p>Felicia, currently at the final year of her IGCSE course has authored our Bahasa section. She has consistently scored well and has thus provided excellent material to those who are struggling in Bahasa Indonesia.</p>
             </div>
           </div>
+        </div> -->
+
+        <div class="contributors">
+          <div class='author' id="author1">
+            <div class="left-block"><h2>Andrew Spagnardi</h2></div>
+            <div class="right-block">
+              <p>Mr Andrew is the author of our Economics section. He is an economics teacher in SIS Medan. He has over 8 years of teaching experience, and is also a financial accountant. His vast field of expertise will assure you that his notes is credible and reliable</p>
+            </div>
+          </div>
+          <div class="contact_info">
+              <span class="contact_icon">
+                <i class="fas fa-envelope border_i" onclick="window.open('mailto:andrew.spagnardi@gmail.com')"></i>
+                <i class="fab fa-linkedin" onclick="window.open('https://www.linkedin.com/in/andrewspagnardi/?originalSubdomain')"></i>
+                <i class="fab fa-instagram border_i" onclick="window.open('https://www.instagram.com/andrew.spagnardi/')"></i>
+              </span>
+          </div>
         </div>
+
+        <div class="contributors">
+          <div class='author' id="author2">
+            <div class="left-block"><h2>Joey Lie</h2></div>
+            <div class="right-block">
+              <p>Ms Joey the author of the biology section is a teacher in Evergreen Institute and teaches IGCSE & A level Biology. The notes she has provided in the Biology section is detailed, informative, and credible</p>
+            </div>
+          </div>
+          <div class="contact_info">
+            <span class="contact_icon">
+              <i class="fas fa-envelope border_i" onclick="window.open('mailto:joeyli428@gmail.com')"></i>
+              <i class="fab fa-linkedin" onclick="window.open('https://www.linkedin.com/in/joeylie92/')"></i>
+              <i class="fab fa-instagram border_i" onclick="window.open('https://www.instagram.com/joeyyliee/')"></i>
+              <!-- <i class="fas fa-comments"></i> -->
+            </span>
+          </div>
+        </div>
+
+        <div class="contributors">
+          <div class='author' id="author3">
+            <div class="left-block"><h2>Girvin</h2></div>
+            <div class="right-block">
+              <p>Girvin, the co-author of our Physics & Economics section, is a student studying in the IB diploma, who has scored seven A* in the subject he took for IGCSEs, including Physics & Economics. He has provided key notes that are consistent and important.</p>
+            </div>
+          </div>
+          <div class="contact_info">
+            <span class="contact_icon">
+              <i class="fas fa-envelope border_i" onclick="window.open('mailto:girvin.djapardi@sisschools.org')"></i>
+              <i class="fas fa-globe border_i" onclick="window.open('https://nailyourigces.wixsite.com/website')"></i>
+              <i class="fab fa-instagram border_i" onclick="window.open('https://www.instagram.com/girvin04/')"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="contributors">
+          <div class='author' id="author4">
+            <div class="left-block"><h2>Felicia Qiu</h2></div>
+            <div class="right-block">
+              <p>Felicia, currently at the final year of her IGCSE course has authored our Bahasa section. She has consistently scored well and has thus provided excellent material to those who are struggling in Bahasa Indonesia.</p>
+            </div>
+          </div>
+          <div class="contact_info">
+            <span class="contact_icon">
+              <i class="fas fa-envelope border_i" onclick="window.open('mailto:felica.felicia@sisschools.org')"></i>
+              <i style="background-color:gray" onclick="window.open('https://www.linkedin.com/in/andrewspagnardi/?originalSubdomain')"></i>
+              <i class="fab fa-instagram border_i" onclick="window.open('https://www.instagram.com/feliciax.q/')"></i>
+            </span>
+          </div>
+        </div>
+
         <br>
+
         <div class="contact">
           <div class='founder'>
             <div class="left_block_f">
