@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-<script src="https://kit.fontawesome.com/b7f6e26f3d.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/b7f6e26f3d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="master.css">
     <meta name="viewport" content="width=device-width, initial-scale 1">
     <link rel="icon" href="fish.ico">
@@ -21,10 +21,10 @@
         height: 46vw;
       }
       .vision, .mission, .values {
-        padding: 2vw 3vw 3vw 2.5vw;
-        margin: 10vw;
-        width: 27vw;
-        height: 25vw;
+        padding: 2vw 5vw 35w 2.5vw;
+        margin: 4vw;
+        width: 29vw;
+        height: 29vw;
         font-size: 1.4vw;
       }
       .vision {
@@ -65,7 +65,11 @@
         justify-content: center;
         margin-left: 3vw;
       }
+      .left-block h2 {
+        margin-left: 3.5vw;
+      }
       .right-block {
+        margin-right: 3vw;
         padding: 2em;
         font-size: 1.35vw;
         background-color: #c0fefc;
@@ -113,8 +117,9 @@
         33% {visibility: hidden}
       } */
       @keyframes spin-hello {
-        0% {transform: rotate(0deg);}
-        100% {transform: rotate(360deg);}
+        0% {transform: rotate(0deg); padding-bottom: 0em}
+        75% {transform: rotate(360deg);}
+        100% {padding-bottom: 4em}
       }
     </style>
   </head>
@@ -147,6 +152,7 @@
         </div>
       </div>
       <div class="contribution">
+        <br>
         <div class="author" id="author1">
           <div class="left-block">
             <h2>Mr Andrew</h2>
@@ -206,8 +212,6 @@
           </div>
         </div>
 
-        <br>
-
         <div class="contact">
           <div class="left_block_f">
             <h2>Carl Djapardi</h2>
@@ -215,11 +219,9 @@
           <div class="right_block_f">
             <p>Hey there, I am Carl taking the IGCSE course, and I am currently in Secondary 3. I have allocated many joint effort from my peers, teachers, and mentors to develop a website to help guide students through this curiculum. The site is long from finished, but I will constantly update it and provide tips and maybe even some blog post in the future. If you would like to contribute your notes, please contact me!</p>
           </div>
-
         </div>
       </div>
     </main>
-    <hr>
     <footer>
       <div class="social_icons_footer">
         <span class="contact_icon">
