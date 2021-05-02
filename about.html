@@ -36,9 +36,6 @@
       .values {
         background-color: #f58634;
       }
-      .author a {
-        color: #04009a;
-      }
       .contribution {
         display: flex;
         flex-direction: column;
@@ -62,7 +59,7 @@
         display: flex;
         flex-direction: row;
         height: 40em;
-        width: 100%;
+        width: 100vw;
         border: 1px solid blue;
         visibility: hidden;
         position: absolute;
@@ -75,9 +72,14 @@
       .contributors #author_contact {
         animation-delay: 6s
       }
+      .author {
+        width: 100%;
+      }
+      /* .author a {
+        color: #04009a;
+      } */
       .left-block, .right-block {
         padding: 20px;
-        width: 100%;
         height: inherit;
         transition: 0.3s ease;
       }
@@ -86,6 +88,15 @@
         text-align: center;
         background-color: #3edbf0;
         width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .right-block {
+        font-size: 20px;
+        background-color: #c0fefc;
+        width: 70%;
+        padding: 50px 70px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -103,15 +114,6 @@
         filter: brightness(115%);
         text-decoration: underline 1px dashed;
         animation: up-bump 0.3s infinite;
-      }
-      .right-block {
-        font-size: 20px;
-        background-color: #c0fefc;
-        width: 70%;
-        padding: 50px 70px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
       }
       .contact {
         height: 10em;
@@ -265,7 +267,7 @@
           </div>
           <div class="contact_info" id="author_contact">
             <span class="contact_icon">
-              <i class="fas fa-envelope border_i" onclick="window.open('mailto:girvin.djapardi@sisschools.org')"></i>
+              <i class="fas fa-youtube border_i" onclick="window.open('https://www.youtube.com/channel/UCGaH6pADL9M0Q4_nubcg0IQ/featured')"></i>
               <i class="fas fa-globe border_i" onclick="window.open('https://nailyourigces.wixsite.com/website')"></i>
               <i class="fab fa-instagram border_i" onclick="window.open('https://www.instagram.com/girvin04/')"></i>
             </span>
