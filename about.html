@@ -12,7 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Guide To IGCSE</title>
     <style>
+      header {
+        width: 100vw;
+      }
       .goals {
+        width: 100vw;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -21,7 +25,7 @@
         height: 50vw;
       }
       .vision, .mission, .values {
-        padding: 2.5vw 3.5vw 2.4vw 4vw;
+        padding: 2.1vw 3.5vw 2.4vw 2.1vw;
         margin: 3.5vw;
         width: 29vw;
         height: 26vw;
@@ -81,7 +85,7 @@
       .contact_icon {
         margin-bottom: 2.8vw;
       }
-      .ic_a /*icon animation */ {
+      .ic_a:hover {
         color: royalblue;
         animation: spin-hello 1s ease;
       }
@@ -118,8 +122,7 @@
       } */
       @keyframes spin-hello {
         0% {transform: rotate(0deg);}
-        80% {transform: rotate(360deg);}
-        100% {transform: translateY(-0.8vw);}
+        100% {transform: rotateY(-1vw); transform: rotate(360deg);}
       }
     </style>
   </head>
@@ -173,7 +176,7 @@
             <h2>Ms Joey</h2>
             <span class="contact_icon">
               <i class="fas fa-envelope ic_a" onclick="window.open('mailto:joeyli428@gmail.com')"></i>
-              <i class="fab fa-linkedin" onclick="window.open('https://www.linkedin.com/in/joeylie92/')"></i>
+              <i class="fab fa-linkedin ic_a" onclick="window.open('https://www.linkedin.com/in/joeylie92/')"></i>
               <i class="fab fa-instagram ic_a" onclick="window.open('https://www.instagram.com/joeyyliee/')"></i>
               <!-- <i class="fas fa-comments"></i> -->
             </span>
