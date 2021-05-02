@@ -21,7 +21,7 @@
         height: 50vw;
       }
       .vision, .mission, .values {
-        padding: 2.5vw 3.8vw 3vw 4vw;
+        padding: 2.5vw 3.5vw 2.4vw 4vw;
         margin: 3.5vw;
         width: 29vw;
         height: 26vw;
@@ -40,7 +40,7 @@
       .contribution {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         height: 60vw;
         width: 100vw;
         background-image: linear-gradient(to right, rgba(99,214,235, 0.8), rgba(215,215,235, 0.8));
@@ -81,7 +81,7 @@
       .contact_icon {
         margin-bottom: 2.8vw;
       }
-      .contact_icon>*:hover {
+      .ic_a /*icon animation */ {
         color: royalblue;
         animation: spin-hello 1s ease;
       }
@@ -96,7 +96,7 @@
       .left_block_f {
         font-size: 1.5vw;
         background-color: #08d9d6;
-        width: 30%;
+        width: 31.8%;
         height: inherit;
         display: flex;
         align-items: center;
@@ -117,8 +117,8 @@
         33% {visibility: hidden}
       } */
       @keyframes spin-hello {
-        0% {transform: rotate(0deg)}
-        99% {transform: rotate(360deg);}
+        0% {transform: rotate(0deg);}
+        80% {transform: rotate(360deg);}
         100% {transform: translateY(-0.8vw);}
       }
     </style>
@@ -158,9 +158,9 @@
             <h2>Mr Andrew</h2>
             <br>
             <span class="contact_icon">
-              <i class="fas fa-envelope border_i" onclick="window.open('mailto:andrew.spagnardi@gmail.com')"></i>
-              <i class="fab fa-linkedin" onclick="window.open('https://www.linkedin.com/in/andrewspagnardi/?originalSubdomain')"></i>
-              <i class="fab fa-instagram border_i" onclick="window.open('https://www.instagram.com/andrew.spagnardi/')"></i>
+              <i class="fas fa-envelope ic_a" onclick="window.open('mailto:andrew.spagnardi@gmail.com')"></i>
+              <i class="fab fa-linkedin ic_a" onclick="window.open('https://www.linkedin.com/in/andrewspagnardi/?originalSubdomain')"></i>
+              <i class="fab fa-instagram ic_a" onclick="window.open('https://www.instagram.com/andrew.spagnardi/')"></i>
             </span>
           </div>
           <div class="right-block">
@@ -172,9 +172,9 @@
           <div class="left-block">
             <h2>Ms Joey</h2>
             <span class="contact_icon">
-              <i class="fas fa-envelope border_i" onclick="window.open('mailto:joeyli428@gmail.com')"></i>
+              <i class="fas fa-envelope ic_a" onclick="window.open('mailto:joeyli428@gmail.com')"></i>
               <i class="fab fa-linkedin" onclick="window.open('https://www.linkedin.com/in/joeylie92/')"></i>
-              <i class="fab fa-instagram border_i" onclick="window.open('https://www.instagram.com/joeyyliee/')"></i>
+              <i class="fab fa-instagram ic_a" onclick="window.open('https://www.instagram.com/joeyyliee/')"></i>
               <!-- <i class="fas fa-comments"></i> -->
             </span>
           </div>
@@ -187,9 +187,9 @@
           <div class="left-block">
             <h2>Girvin</h2>
             <span class="contact_icon">
-              <i class="fab fa-youtube border_i" onclick="window.open('https://www.youtube.com/channel/UCGaH6pADL9M0Q4_nubcg0IQ/featured')"></i>
-              <i class="fas fa-globe border_i" onclick="window.open('https://nailyourigces.wixsite.com/website')"></i>
-              <i class="fab fa-instagram border_i" onclick="window.open('https://www.instagram.com/girvin04/')"></i>
+              <i class="fab fa-youtube ic_a" onclick="window.open('https://www.youtube.com/channel/UCGaH6pADL9M0Q4_nubcg0IQ/featured')"></i>
+              <i class="fas fa-globe ic_a" onclick="window.open('https://nailyourigces.wixsite.com/website')"></i>
+              <i class="fab fa-instagram ic_a" onclick="window.open('https://www.instagram.com/girvin04/')"></i>
             </span>
           </div>
           <div class="right-block">
@@ -202,9 +202,9 @@
             <h2>Felicia</h2>
             <br>
             <span class="contact_icon">
-              <i class="fas fa-envelope border_i" onclick="window.open('mailto:felica.felicia@sisschools.org')"></i>
+              <i class="fas fa-envelope ic_a" onclick="window.open('mailto:felica.felicia@sisschools.org')"></i>
               <i style="background-color:gray" onclick="window.open('https://www.linkedin.com/in/andrewspagnardi/?originalSubdomain')"></i>
-              <i class="fab fa-instagram border_i" onclick="window.open('https://www.instagram.com/feliciax.q/')"></i>
+              <i class="fab fa-instagram ic_a" onclick="window.open('https://www.instagram.com/feliciax.q/')"></i>
             </span>
           </div>
           <div class="right-block">
