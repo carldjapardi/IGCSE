@@ -62,15 +62,19 @@
         width: 100vw;
         border: 1px solid blue;
         visibility: hidden;
-        position: absolute;
-        animation: 10s slides infinite;
-        transition: 0.3s ease;
+        position: relative;
       }
       .contributors #author_desc {
         animation-delay: 0s
       }
       .contributors #author_contact {
-        animation-delay: 6s
+        animation-delay: 5s
+      }
+      .contributors > * {
+        visibility: hidden;
+        position: absolute;
+        animation: 10s slides infinite;
+        transition: 0.5s all ease;
       }
       .author {
         width: 100%;
@@ -115,6 +119,7 @@
         text-decoration: underline 1px dashed;
         animation: up-bump 0.3s infinite;
       }
+      /* founder section */
       .contact {
         height: 10em;
         width: 100%;
@@ -267,7 +272,7 @@
           </div>
           <div class="contact_info" id="author_contact">
             <span class="contact_icon">
-              <i class="fas fa-youtube border_i" onclick="window.open('https://www.youtube.com/channel/UCGaH6pADL9M0Q4_nubcg0IQ/featured')"></i>
+              <i class="fab fa-youtube border_i" onclick="window.open('https://www.youtube.com/channel/UCGaH6pADL9M0Q4_nubcg0IQ/featured')"></i>
               <i class="fas fa-globe border_i" onclick="window.open('https://nailyourigces.wixsite.com/website')"></i>
               <i class="fab fa-instagram border_i" onclick="window.open('https://www.instagram.com/girvin04/')"></i>
             </span>
