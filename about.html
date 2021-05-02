@@ -41,47 +41,39 @@
       }
       .contribution {
         display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
-        height: 38vw;
+        height: 100em;
         width: 100%;
         background-image: linear-gradient(to right, rgba(99,214,235, 0.8), rgba(215,215,235, 0.8));
       }
-      .contributors {
+      /* .contributors {
         height: 10em;
         width: 100%;
-        position: relative;
+        position: relative; */
       }
-      .contributors a {
+      /* .contributors a {
         text-decoration: none;
         color: black;
-      }
-      .contributors a h2 {
+      } */
+      /* .contributors a h2 {
         font-size: 26px;
-      }
-      .contributors .author {
+      } */
+      .contributors {
         display: flex;
-        height: inherit;
-        width: 100%;
-        align-items: center;
+        flex-direction: row;
+        height: 10em;
+        width: 90%;
         border: 1px solid blue;
         visibility: hidden;
         position: absolute;
-        animation: 32s slides infinite;
+        animation: 10s slides infinite;
         transition: 0.3s ease;
       }
-      .contributors #author1 {
+      .contributors #author_desc {
         animation-delay: 0s
       }
-      .contributors #author2 {
-        animation-delay: 8s
-      }
-      .contributors #author3 {
-        animation-delay: 16s
-      }
-      .contributors #author4 {
-        animation-delay: 24s
+      .contributors #author_contact {
+        animation-delay: 6s
       }
       .left-block, .right-block {
         padding: 20px;
@@ -98,7 +90,13 @@
         align-items: center;
         justify-content: center;
       }
-      .author:hover {
+      .contact_info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+      .contact_info:hover {
         cursor: pointer;
       }
       .author:hover .left-block {
@@ -226,13 +224,13 @@
         </div> -->
 
         <div class="contributors">
-          <div class='author' id="author1">
+          <div class='author' id="author_desc">
             <div class="left-block"><h2>Andrew Spagnardi</h2></div>
             <div class="right-block">
               <p>Mr Andrew is the author of our Economics section. He is an economics teacher in SIS Medan. He has over 8 years of teaching experience, and is also a financial accountant. His vast field of expertise will assure you that his notes is credible and reliable</p>
             </div>
           </div>
-          <div class="contact_info">
+          <div class="contact_info" id="author_contact">
               <span class="contact_icon">
                 <i class="fas fa-envelope border_i" onclick="window.open('mailto:andrew.spagnardi@gmail.com')"></i>
                 <i class="fab fa-linkedin" onclick="window.open('https://www.linkedin.com/in/andrewspagnardi/?originalSubdomain')"></i>
@@ -242,13 +240,13 @@
         </div>
 
         <div class="contributors">
-          <div class='author' id="author2">
+          <div class='author' id="author_desc">
             <div class="left-block"><h2>Joey Lie</h2></div>
             <div class="right-block">
               <p>Ms Joey the author of the biology section is a teacher in Evergreen Institute and teaches IGCSE & A level Biology. The notes she has provided in the Biology section is detailed, informative, and credible</p>
             </div>
           </div>
-          <div class="contact_info">
+          <div class="contact_info" id="author_contact">
             <span class="contact_icon">
               <i class="fas fa-envelope border_i" onclick="window.open('mailto:joeyli428@gmail.com')"></i>
               <i class="fab fa-linkedin" onclick="window.open('https://www.linkedin.com/in/joeylie92/')"></i>
@@ -259,13 +257,13 @@
         </div>
 
         <div class="contributors">
-          <div class='author' id="author3">
+          <div class='author' id="author_desc">
             <div class="left-block"><h2>Girvin</h2></div>
             <div class="right-block">
               <p>Girvin, the co-author of our Physics & Economics section, is a student studying in the IB diploma, who has scored seven A* in the subject he took for IGCSEs, including Physics & Economics. He has provided key notes that are consistent and important.</p>
             </div>
           </div>
-          <div class="contact_info">
+          <div class="contact_info" id="author_contact">
             <span class="contact_icon">
               <i class="fas fa-envelope border_i" onclick="window.open('mailto:girvin.djapardi@sisschools.org')"></i>
               <i class="fas fa-globe border_i" onclick="window.open('https://nailyourigces.wixsite.com/website')"></i>
@@ -275,13 +273,13 @@
         </div>
 
         <div class="contributors">
-          <div class='author' id="author4">
+          <div class='author' id="author_desc">
             <div class="left-block"><h2>Felicia Qiu</h2></div>
             <div class="right-block">
               <p>Felicia, currently at the final year of her IGCSE course has authored our Bahasa section. She has consistently scored well and has thus provided excellent material to those who are struggling in Bahasa Indonesia.</p>
             </div>
           </div>
-          <div class="contact_info">
+          <div class="contact_info" id="author_contact">
             <span class="contact_icon">
               <i class="fas fa-envelope border_i" onclick="window.open('mailto:felica.felicia@sisschools.org')"></i>
               <i style="background-color:gray" onclick="window.open('https://www.linkedin.com/in/andrewspagnardi/?originalSubdomain')"></i>
