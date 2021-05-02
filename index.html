@@ -10,7 +10,7 @@
     <title>Icognito IGCSE</title>
     <style>
       body {width: 100%}
-      header {  
+      /* header {
         background-image: linear-gradient(to bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.25));
         position: fixed;
         overflow: hidden;
@@ -19,7 +19,7 @@
       }
       header.nav_links li a{
         background-color: red;
-      }
+      } */
       main {
         display: flex;
         justify-content: space-around;
@@ -216,10 +216,75 @@
         90% { margin-top: -2px; margin-left: 0; }
         100% { margin-top: 0; margin-left: 0; }
       }
+      .navbar {
+          font-size: 18px;
+          background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          padding-bottom: 10px;
+      }
+      .main-nav {
+          list-style-type: none;
+          display: none;
+      }
+      .nav-link, .logo {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 0.7);
+      }
+      .main-nav li {
+          text-align: center;
+          margin: 15px auto;
+      }
+      .logo {
+          display: inline-block;
+          font-size: 22px;
+          margin-top: 10px;
+          margin-left: 20px;
+      }
+      .navbar-hamburger {
+          position: absolute;
+          top: 10px;
+          right: 20px;
+          cursor: pointer;
+          color: rgba(255, 255, 255, 0.8);
+          font-size: 24px;
+      }
+      .active {
+          display: block;
+      }
+      @media screen and (min-width: 768px) {
+          .navbar {
+              display: flex;
+              justify-content: space-between;
+              padding-bottom: 0;
+              height: 70px;
+              align-items: center;
+          }
+          .main-nav {
+              display: flex;
+              margin-right: 30px;
+              flex-direction: row;
+              justify-content: flex-end;
+          }
+          .main-nav li {
+              margin: 0;
+          }
+          .nav-link {
+              margin-left: 40px;
+          }
+          .logo {
+              margin-top: 0;
+          }
+          .navbar-hamburger {
+              display: none;
+          }
+          .logo:hover, .nav-link:hover {
+              color: rgba(255, 255, 255, 1);
+          }
+        }
     </style>
   </head>
   <body>
-    <header class="top_nav" id="top_nav">
+    <!-- <header class="top_nav" id="top_nav">
       <img class="logo" src="glasses.svg" alt="Logo">
       <nav>
         <ul class="nav_links">
@@ -229,8 +294,21 @@
         </ul>
       </nav>
       <a class="about" href="about.html">About Us</a>
+    </header> <hr>-->
+    <header>
+      <nav class="navbar">
+        <span class="navbar-hamburger" id="js-navbar-hamburger">
+          <i class="fas fa-bars"></i>
+        </span>
+        <a href="#" class="logo">ICOGNITO IGCSE</a>
+        <ul class="main-nav" id="js-menu">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="topics.html" class="nav-link">Topics</a></li>
+            <li><a href="tips.html" class="nav-link">Tips</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+        </ul>
+      </nav>
     </header>
-    <hr>
 
     <div class="slideshow">
       <div class="slideshow-container">
@@ -339,7 +417,7 @@
         <li> <a href="tips.html">Tips</a> </li>
         <li> <a href="about.html">About</a> </li>
       </ul>
-      <p class="license">Copyright SIGOTHER © 2021 Under MIT License</p>
+      <p class="license">Copyright SIGOTHER CHOO @ 2021 (For usage please contact owner)</p>
     </footer>
     <script>
       let button = document.querySelector('.logo')
@@ -402,7 +480,14 @@
           (rect.top >= 0 &&
             rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
         );
-      }
+      };
+
+      let mainNav = document.getElementById('js-menu');
+      let navBarHamburger = document.getElementById('js-navbar-toggle');
+
+      navBarHamburger.addEventListener('click', function () {
+        mainNav.classList.toggle('active');
+      });
       </script>
   </body>
 </html>
