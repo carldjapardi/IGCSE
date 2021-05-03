@@ -109,6 +109,7 @@ main, footer {
 }
 
 footer {
+  width: 100%;
   text-align: center;
   background-color: rgb(235,235,235);
   padding: 50px;
